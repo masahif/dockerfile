@@ -1,7 +1,7 @@
 # AWS CDK with Python3.8
 
 ## how to build
-CDK_VERSION=1.78.0 ./build.sh
+CDK_VERSION=1.80.0 ./build.sh
 
 ## CLI
 ```

@@ -1,0 +1,5 @@
+#!/bin/bash
+set -eu
+
+docker tag $IMAGE_NAME $DOCKER_REPO:$CDK_VERSION
+docker push $DOCKER_REPO:$SOURCE_COMMIT

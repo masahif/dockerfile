@@ -7,4 +7,6 @@ else
     DOCKERFILE_PATH_ARG="-f $DOCKERFILE_PATH"
 fi
 
-docker build --build-arg CDK_VERSION=${DOCKER_TAG} ${DOCKERFILE_PATH_ARG} -t $IMAGE_NAME .
+CDK_VERSION=$(cat CDK_VERSION)
+
+docker build --build-arg CDK_VERSION=${CDK_VERSION} ${DOCKERFILE_PATH_ARG} -t $IMAGE_NAME .

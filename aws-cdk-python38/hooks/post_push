@@ -1,0 +1,11 @@
+#!/bin/bash
+set -eu
+
+CDK_VERSION=$(cat CDK_VERSION)
+
+# Parse image name for repo name
+TAG_START=$(expr index "$IMAGE_NAME" :)
+REPO_NAME=${IMAGE_NAME:0:TAG_START-1}
+
+docker tag $IMAGE_NAME $DOCKER_REPO:$CDK_VERSION
+docker push $REPO_NAME:$CDK_VERSION

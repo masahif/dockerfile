@@ -2,4 +2,5 @@
 
 set -eu
 
+CDK_VERSION=$(cat CDK_VERSION)
 docker tag $IMAGE_NAME $DOCKER_REPO:$CDK_VERSION

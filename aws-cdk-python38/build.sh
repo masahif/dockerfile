@@ -7,4 +7,4 @@ then
 else
   echo "CDK VERSION: $CDK_VERSION"
 fi
-docker build -f Dockerfile -t aws-cdk-lambda-python3.8:$CDK_VERSION --build-arg CDK_VERSION=$CDK_VERSION .
+docker build -f Dockerfile -t aws-cdk-python38:$CDK_VERSION --build-arg CDK_VERSION=$CDK_VERSION .

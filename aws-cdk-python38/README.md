@@ -16,3 +16,7 @@ $ docker run --rm -v $(pwd):/work masahif/aws-cdk-python38 cdk list
 
 cdk-app
 ```
+
+
+## docker hub
+https://hub.docker.com/repository/registry-1.docker.io/masahif/aws-cdk-python38/
